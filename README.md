@@ -1,16 +1,55 @@
-# React + Vite
+# Dynamic Color Clock
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React + Vite application that displays a live digital clock showing the current date and time. The project uses date-fns for date formatting and includes a styled interface using CSS.
 
-Currently, two official plugins are available:
+# Features
+Live updating clock (updates every second)
+Displays full date and time in a readable format
+Built with React and Vite
+Uses date-fns for date formatting
+Styled with CSS for a modern UI
+Tech Stack
+React
+Vite
+JavaScript (ES6+)
+date-fns
+CSS
+# Project Structure
+color-clock/
+│
+├── public/
+├── src/
+│   ├── App.jsx          # Main application component
+│   ├── App.css          # Styling
+│   ├── main.jsx         # Entry point
+│
+├── index.html
+├── package.json
+└── README.md
+# Installation & Setup
+1. Clone the repository
+git clone https://github.com/Soniathestar/dynamic-color-clock.git
+2. Navigate into the project folder
+cd dynamic-color-clock
+3. Install dependencies
+npm install
+4. Install date-fns
+npm install date-fns@2.30.0
+5. Start the development server
+npm run dev
+6. Open in browser
+http://localhost:5173
+# How It Works
+useState stores the current time.
+useEffect runs a timer that updates the time every second.
+setInterval ensures the clock stays live.
+date-fns formats the date into a readable string.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+To save and push changes:
+git add .
+git commit -m "Update project"
+git push origin main
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Author
+Sonia Ngaruiya
