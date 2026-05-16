@@ -55,4 +55,4 @@ git push origin main
 Sonia Ngaruiya
 
 # Screenshot
-[Color Clock](./assets/screenshots/screenshot.png)
+(./assets/screenshots/screenshot.png)
